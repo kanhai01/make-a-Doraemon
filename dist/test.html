@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试</title>
+</head>
+<body>
+<div id="demo"></div>
+<div id="demo2"></div>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+    #buttons{
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        z-index: 1;
+    }
+    #buttons>button{
+        margin: 10px;
+        padding: 5px 10px;
+    }
+    #demo {
+        display: none;
+    }
+
+    #demo2 {
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    #demo2::-webkit-scrollbar {
+        display: none;
+    }
+
+    .box {
+        position: fixed;
+        bottom: 50%;
+        right: 0;
+        width: 60%;
+        height: 50%;
+        z-index: -1;
+    }
+
+    @media (max-width: 500px) {
+        #demo2 {
+            position: fixed;
+            height: 50vh;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-left: 20px;
+            overflow-y: auto;
+        }
+        #demo2::-webkit-scrollbar {
+            display: none;
+        }
+        .box{
+            position: fixed;
+            right: 78%;
+            top: 0;
+        }
+        .box{
+            bottom: -400px;
+        }
+    }</style>
+    <div class="box">
+        <div class="head">
+            <div class="face"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="heart">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="bread">
+                <div class="line"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="test.32ffe87b.js"></script>
+</body>
+</html>
